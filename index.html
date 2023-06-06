@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropboolean</title>
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -34,15 +37,132 @@
     <header>
         <div class="container hero-section">
             <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
-            <div>
-                <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
-                <button type="button">Inizia la prova gratuita</button>
-                <p>Annulla in qualsiasi momento</p>
-                <span><i class="fa-solid fa-arrow-down"></i></span>
+            <div class="hero-content">
+                <div>
+                    <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto.
+                        Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato
+                        per ottimizzare il flusso di lavoro esistente.</p>
+                    <button type="button">Inizia la tua prova gratuita</button>
+                    <p>Annulla in qualsiasi momento</p>
+                    <a href="#"><i class="fa-solid fa-arrow-down"></i></a>
+                </div>
+                <div>
+                    <img src="./img/jumbo.png" alt="">
+                </div>
             </div>
-            
         </div>
     </header>
-    
+
+    <main>
+        <section class="container section-container">
+            <h2>Trova il tuo piano business che fa per te</h2>
+            <div>
+                <input type="radio" name="fattura" id="Fattura-mensile"><span>Fatturazione mensile</span>
+                <input type="radio" name="fattura" id="Fattura-annuale"><span>Fatturazione annuale</span>
+            </div>
+            <div class="container-sub">
+                <div class="container-col">
+                    <div class="subscription-icon">
+                        <div><i class="fa-solid fa-user"></i>Singolo</div>
+                    </div>
+                    <div class="subscription">
+                        <h3>Professional</h3>
+                        <strong>€ 12.00</strong>
+                        <span>/mese</span>
+                        <ul class="description">
+                            <li><div><i class="fa-solid fa-user"></i></div>1 utente</li>
+                            <li><span><i class="fa-solid fa-folder"></i></span>5 TB di spazio di archiviazione sicuro
+                            </li>
+                            <li><span><i class="fa-solid fa-share-nodes"></i></span>Funzioni di produttività premium e
+                                condivisione file semplice e sicura</li>
+                        </ul>
+                        <button type="button">Prova gratis per 30 giorni</button>
+                        <p>oppure <a href="#">acquista ora</a></p>
+                        <hr>
+                        <strong>Punti Salienti del piano</strong>
+
+                        <p><i class="fa-solid fa-check" style="color:var(--color-primary-button)"></i>Invia file fino a
+                            100 GB con Dropbox Transfert</p>
+                        <p><i class="fa-solid fa-check" style="color: var(--color-primary-button)"></i>Cartelle offline
+                            su dispositivi mobili</p>
+                    </div>
+                </div>
+                <div class="container-col">
+                    <div class="subscription-icon">
+                        <div><i class="fa-solid fa-users"></i>Team</div>
+                    </div>
+                    <div class="subscription">
+                        <h3>Advanced</h3>
+                        <strong>€ 18.00</strong>
+                        <span>/utente/mese</span>
+                        <ul class="description">
+                            <li><span><i class="fa-solid fa-users"></i></span>3 o più utenti</li>
+                            <li><span><i class="fa-solid fa-folder"></i></span>Tutto lo spazio di cui hai bisogno li tuo
+                                team</li>
+                            <li><span><i class="fa-solid fa-share-nodes"></i></span>Sofisticate funzioni di controllo e
+                                per tenere al sicuro tutti i file del tuo team</li>
+                        </ul>
+                        <button type="button">Prova gratis per 30 giorni</button>
+                        <p>oppure <a href="#">acquista ora</a></p>
+                        <hr>
+                        <strong>Punti Salienti del piano</strong>
+                        <p><i class="fa-solid fa-check" style="color: var(--color-primary-button)"></i>Nessun limite di
+                            spazio per i file</p>
+                        <p><i class="fa-solid fa-check" style="color: var(--color-primary-button)"></i>Cartelle offline
+                            su dispositivi mobili</p>
+                        <p><i class="fa-solid fa-check" style="color: var(--color-primary-button)"></i>Risparmio del 50%
+                            rispetto alle iscrizioni singole</p>
+                        <p><i class="fa-solid fa-check" style="color: var(--color-primary-button)"></i>Possibilità di
+                            inserire nuovi membri del team</p>
+                        <p><i class="fa-solid fa-check" style="color: var(--color-primary-button)"></i>Gestione dei
+                            permessi in base ai ruoli</p>
+                    </div>
+                </div>
+                <div class="container-col">
+                    <div class="subscription-icon">
+                        <div><i class="fa-solid fa-building"></i>Azienda</div>
+                    </div>
+                    <div class="subscription">
+                        <h3>Enterprise</h3>
+                        <strong>Contattaci</strong>
+                        <span>-</span>
+                        <ul class="description">
+                            <li><span><i class="fa-solid fa-user"></i></span>10 o più utente</li>
+                            <li><span><i class="fa-solid fa-folder"></i></span>soluzioni personalizzabili per la tua
+                                azienda</li>
+                            <li><span><i class="fa-solid fa-share-nodes"></i></span>Assistenza personalizzata per
+                                aiutare gli amministratori in una gestione su larga scala</li>
+                        </ul>
+                        <button type="button">Contattaci</button>
+                        <p>oppure <a href="#">acquista ora</a></p>
+                        <hr>
+                        <strong>Punti Salienti del piano</strong>
+                        <p><i class="fa-solid fa-check" style="color: var(--color-primary-button)"></i>Invia file fino a
+                            100 GB con Dropbox Transfert</p>
+                        <p><i class="fa-solid fa-check" style="color: var(--color-primary-button)"></i>Cartelle offline
+                            su dispositivi mobili</p>
+                    </div>
+                </div>
+                <div class="container-col">
+                    <div class="subscription-icon">
+                        <div><i class="fa-solid fa-building"></i>Team</div>
+                    </div>
+                    <div class="subscription">
+                        <div>
+                            <h3>Enterprise</h3>
+                            <strong>Contatta l'ufficio vendite per i prezzi</strong>
+                            <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</p>
+                        </div>
+
+                        <button type="button">Contatta l'ufficio vendite</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
 </body>
+
 </html>
