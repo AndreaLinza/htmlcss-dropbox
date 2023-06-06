@@ -89,12 +89,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
-    justify-content: space-between;
+    gap: 2rem;
 }
 
 .container-col {
     width: 31%;
-
 }
 
 .subscription-icon,
@@ -126,11 +125,6 @@ main {
 
     width: 100%;
     padding: 1rem 0;
-}
-
-.description{
-    
-    
 }
 
 .description span {
@@ -188,3 +182,13 @@ main {
     color: black;
     border: 1px solid black;
 }
+
+.container-info{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+
