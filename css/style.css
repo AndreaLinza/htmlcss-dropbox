@@ -1,137 +1,190 @@
-:root{
-    --color-primary-button:#0061FF;
-    --color-hover-primary-button:#4783f3;
-    --color-primary:#B4D0E7;
+:root {
+    --color-primary-button: #0061FF;
+    --color-hover-primary-button: #4783f3;
+    --color-primary: #B4D0E7;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.hero-content i{
+
+.hero-content i {
     font-size: 50px;
     padding-top: 5rem;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
     align-items: center;
 }
-img{
+
+img {
     display: block;
     object-fit: contain;
     width: 100%;
     padding-top: .2rem;
 }
-.nav-left ul, .nav-right ul{
+
+.nav-left ul,
+.nav-right ul {
     display: flex;
 }
-.nav-left, .nav-right{
+
+.nav-left,
+.nav-right {
     display: flex;
-    
+
 }
-header{
+
+header {
     background-color: var(--color-primary);
 }
-.container{
+
+.container {
     max-width: 1200px;
-    margin:auto;
+    margin: auto;
 }
-.hero-section{
-    padding-top:4rem;
-    padding-bottom: 1rem; 
+
+.hero-section {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
 }
-.hero-content{
+
+.hero-content {
     display: flex;
     padding-top: 2rem;
     position: relative;
-    
+
 }
-.hero-content div{
+
+.hero-content div {
     width: 30%;
 }
-.hero-content button{
+
+.hero-content button {
     padding: .8rem;
 }
-.hero-content div:last-child{
+
+.hero-content div:last-child {
     position: absolute;
     width: 75%;
     top: 13%;
     left: 30%;
 }
 
-main{
+main {
     margin-top: 5rem;
 }
 
-.section-container{
-    max-width: 1000px;   
+.section-container {
+    max-width: 1000px;
 }
-.container-sub{
+
+.container-sub {
     margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
     justify-content: space-between;
 }
-.container-col{
+
+.container-col {
     width: 31%;
-    
+
 }
 
-.subscription-icon, .subscription{
+.subscription-icon,
+.subscription {
     max-width: 100%;
     border: 1px solid lightgrey;
 }
-.subscription-icon{
+
+.subscription-icon {
     text-align: center;
     padding: .5rem;
 }
-.subscription{
+
+.subscription {
     height: 100%;
     padding: 1rem 2rem;
 }
-.subscription p{
+
+.subscription p {
     padding: .5rem 0;
 }
-.subscription > span{
+
+.subscription>span {
     display: block;
     padding: 1rem 0;
 }
-.description li{
+
+.description li {
+
     width: 100%;
     padding: 1rem 0;
 }
-.description span{
-    margin:0;
+
+.description{
+    
+    
 }
-.subscription button{
+
+.description span {
+    margin: 0;
+}
+
+.subscription button {
     width: 100%;
     margin: 1rem auto;
     padding: 1rem;
 }
-.subscription a{
+
+.subscription a {
     color: var(--color-primary-button);
     text-decoration: underline;
 }
-.subscription a:hover{
+
+.subscription a:hover {
     text-decoration: none;
 }
-.container-col:last-child{
+
+.container-col:last-child {
     margin-top: 5rem;
     width: 100%;
 
 }
-.container-col:last-child .subscription{
+
+.container-col:last-child .subscription {
     padding-top: 2rem;
     display: flex;
 }
-.container-col:last-child button{
+
+.container-col:last-child button {
     width: 40%;
     margin: auto;
     margin-top: 0;
 }
-.container-col:last-child p{
+
+.container-col:last-child p {
     padding-top: 5rem;
+}
+
+.partner {
+    display: flex;
+}
+
+.partner img {
+    width: 60%;
+}
+.description-partner{
+    padding: 3rem;
+}
+.partner button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
