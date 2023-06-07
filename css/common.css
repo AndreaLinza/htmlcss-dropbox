@@ -13,11 +13,8 @@ h3{
     font-size: 25px;
     padding: 1rem 0;
 }
-svg{
-    width: 100px;
-}
-.pd-t10-b10{
-    padding:10rem 0;
+.pd-t10{
+    padding-top:10rem;
 }
 .mg-b5{
     margin-bottom: 5rem;
