@@ -1,7 +1,7 @@
 :root {
     --color-primary-blue: #0061FF;
     --color-hover-primary-blue: #4783f3;
-    --color-primary: #B4D0E7;
+    --color-primary: #B2CFE5;
     --color-border: lightgrey;
 }
 
@@ -114,11 +114,9 @@ main {
     padding: .5rem;
 }
 
-.subscription {
-    height: 100%;  
-}
-.pd-t1-b2{
-    padding: 1rem 2rem;
+.subscription { 
+    height:calc(100% - 40px);
+    margin-bottom: 2rem; 
 }
 
 .subscription p {   
@@ -133,11 +131,6 @@ main {
     width: 100%;
     margin: 2rem auto;
     padding: 1rem;
-}
-.subscription:last-child{
-    height: calc(100% - 80px);
-    padding-bottom: 0;
-    margin-bottom: 2rem;
 }
 .description li, .check li{
     display: flex;
@@ -157,14 +150,14 @@ main {
 .blue-link:hover {
     text-decoration: none;
 }
-
 .container-sub .container-col:last-child {
     width: 100%;
-
 }
 
 .container-sub .container-col:last-child .subscription {
+    height: calc(100% - 80px);
     padding: 2rem;
+    margin-bottom: 2rem;
     display: flex;
 }
 
@@ -301,7 +294,7 @@ footer{
 .container-col-small{
     width: 15%;
     margin: 0 1rem;
-    padding: 3rem 0;
+    padding: 2rem 0;
     gap: 1rem;
 }
 .container-col-small ul{
@@ -309,7 +302,6 @@ footer{
 }
 .container-col-small li{
     padding: .5rem 0;
-
 }
 .container:last-child hr{
     width: 10%;
