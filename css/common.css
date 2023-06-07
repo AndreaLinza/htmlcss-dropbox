@@ -2,7 +2,7 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
-    font-size: 70px;
+    font-size: 75px;
     font-weight: 900;
 }
 h2{
@@ -13,10 +13,30 @@ h3{
     font-size: 25px;
     padding: 1rem 0;
 }
-span{
+svg{
+    width: 100px;
+}
+.pd-t10-b10{
+    padding:10rem 0;
+}
+.mg-b5{
+    margin-bottom: 5rem;
+}
+.mg-r5{
     margin-right: 5rem;
 }
+.pd-t2-b2{
+    padding: 2rem 0;
+}
+.mg-t3-b3{
+    margin: 3rem 0;
+}
+.mg-t5-b1{
+    margin-top:5rem;
+    margin-bottom: 1rem;
+}
 input, i{
+    display: inline-block;
     margin-right: .5rem;
 }
 p{
@@ -24,14 +44,15 @@ p{
     line-height: 22px;
 }
 hr{
-    color: lightgrey;
-    margin: 2rem 0;
+    color: var(--color-border);
+    margin: 3rem 0;
     width: 25%;
 }
 strong{
-    margin: 1rem 0;
+    display: block;
 }
-ul{
+
+.base-list{
     width: 100%;
     padding:  .5rem;
     list-style: none;
@@ -53,11 +74,11 @@ button{
     display: block;
     font-size: 1rem;
     padding: .5rem 1rem;
-    background-color: var(--color-primary-button);
+    background-color: var(--color-primary-blue);
     border: none;
     color: white;
 }
 button:hover{
-    background-color: var(--color-hover-primary-button);
+    background-color: var(--color-hover-primary-blue);
     cursor: pointer;
 }

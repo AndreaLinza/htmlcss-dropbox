@@ -1,7 +1,8 @@
 :root {
-    --color-primary-button: #0061FF;
-    --color-hover-primary-button: #4783f3;
+    --color-primary-blue: #0061FF;
+    --color-hover-primary-blue: #4783f3;
     --color-primary: #B4D0E7;
+    --color-border: lightgrey;
 }
 
 * {
@@ -16,6 +17,10 @@
 }
 
 nav {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
@@ -26,7 +31,7 @@ img {
     display: block;
     object-fit: contain;
     width: 100%;
-    padding-top: .2rem;
+    
 }
 
 .nav-left ul,
@@ -55,10 +60,7 @@ header {
 }
 
 .hero-content {
-    display: flex;
-    padding-top: 2rem;
-    position: relative;
-
+    display: flex;    
 }
 
 .hero-content div {
@@ -70,10 +72,16 @@ header {
 }
 
 .hero-content div:last-child {
-    position: absolute;
-    width: 75%;
-    top: 13%;
-    left: 30%;
+    flex-grow: 1;
+    position: relative;
+
+    
+}
+.hero-content img{
+    position: absolute;     
+    bottom: -20%;
+    height: calc(100% + 20%);   
+    object-position: bottom;
 }
 
 main {
@@ -84,11 +92,9 @@ main {
     max-width: 1000px;
 }
 
-.container-sub {
-    margin-top: 3rem;
+.container-sub, .container-info{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
     gap: 2rem;
 }
 
@@ -99,7 +105,7 @@ main {
 .subscription-icon,
 .subscription {
     max-width: 100%;
-    border: 1px solid lightgrey;
+    border: 1px solid var(--color-border);
 }
 
 .subscription-icon {
@@ -108,11 +114,13 @@ main {
 }
 
 .subscription {
-    height: 100%;
+    height: 100%;  
+}
+.pd-t1-b2{
     padding: 1rem 2rem;
 }
 
-.subscription p {
+.subscription p {   
     padding: .5rem 0;
 }
 
@@ -120,50 +128,52 @@ main {
     display: block;
     padding: 1rem 0;
 }
-
-.description li {
-
-    width: 100%;
-    padding: 1rem 0;
-}
-
-.description span {
-    margin: 0;
-}
-
 .subscription button {
     width: 100%;
     margin: 1rem auto;
     padding: 1rem;
 }
+.subscription:last-child{
+    height: calc(100% - 80px);
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+}
+.description li, .check li{
+    display: flex;
+    width: 100%;
+    padding: 1rem 0;
+}
 
-.subscription a {
-    color: var(--color-primary-button);
+.description i, .check i {
+    display: inline-block;
+}
+
+.blue-link {
+    color: var(--color-primary-blue);
     text-decoration: underline;
 }
 
-.subscription a:hover {
+.blue-link:hover {
     text-decoration: none;
 }
 
-.container-col:last-child {
-    margin-top: 5rem;
+.container-sub .container-col:last-child {
     width: 100%;
 
 }
 
-.container-col:last-child .subscription {
-    padding-top: 2rem;
+.container-sub .container-col:last-child .subscription {
+    padding: 2rem;
     display: flex;
 }
 
-.container-col:last-child button {
+.container-sub .container-col:last-child button {
     width: 40%;
     margin: auto;
     margin-top: 0;
 }
 
-.container-col:last-child p {
+.container-sub .container-col:last-child p {
     padding-top: 5rem;
 }
 
@@ -182,13 +192,63 @@ main {
     color: black;
     border: 1px solid black;
 }
-
-.container-info{
-    margin-top: 3rem;
+#banner-section{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.box-banner{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
-    justify-content: space-between;
+    width: 30vw; 
+    height: 60vh;
+}
+.banner{
+    display: flex;
+    width: 50%;
+    max-height: 100vh;
+    justify-content: center;
+    align-items: center; 
+}
+.banner img{
+    width: 125px;
+}
+.banner-info{
+    padding: 2rem;
+    overflow: auto;
+    background-color: #F5F5F5;
+    width: 40%;
+    max-height: 60vh
+
+}
+.banner-info img{
+    filter: brightness(0);
+    width: 250px;
 }
 
 
+.green{
+    border: .8rem solid #D1E9CD;
+    background-color: #A2D39B;
+}
+.red-wine{
+    background-color: #61082B;
+}
+.blue{
+    background-color: #0093CE;
+}
+.red-light{
+    background-color:#FF1C1C ;
+}
+.red{
+    background-color: #D5001F;
+}
+.blue-light{
+    background-color: #B4D0E7;
+}
+.blue-dark{
+    background-color: #0D2481;
+}
+.yellow{
+    background-color: #FFD830;
+}
