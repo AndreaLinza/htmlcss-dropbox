@@ -2,23 +2,39 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
-    padding-top: 6rem;
     font-size: 75px;
     font-weight: 900;
 }
-h2{
-    padding: 4rem 0;
+
+h2{   
     font-size: 40px;
 }
+
 h3{
     font-size: 25px;
-    padding: 1rem 0;
 }
-.pd-b10{
-    padding-bottom:10rem;
+
+.pd-t1-b1{
+    padding: 1rem 0;
 }
 .pd-t1-b2{
     padding: 1rem 2rem;
+}
+
+.pd-t2-b2{
+    padding: 2rem 0;
+}
+.pd-t3-b3{
+    padding: 3rem 0;
+}
+.pd-t6{
+    padding-top: 6rem;
+}
+.pd-t10-b10{
+    padding:10rem 0;
+}
+.mg-t3-b3{
+    margin: 3rem 0;
 }
 .mg-t5{
     margin-top: 5rem;
@@ -29,22 +45,11 @@ h3{
 .mg-r5{
     margin-right: 5rem;
 }
-.pd-t2-b2{
-    padding: 2rem 0;
-}
-.mg-t3-b3{
-    margin: 3rem 0;
-}
-.mg-t5-b1{
-    margin-top:5rem;
-    margin-bottom: 1rem;
-}
 input, i{
     display: inline-block;
     margin-right: .5rem;
 }
 p{
-    padding: 2rem 0;
     line-height: 22px;
 }
 hr{

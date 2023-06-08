@@ -210,6 +210,15 @@ header {
     overflow: auto;
     background-color: #F5F5F5;
 }
+.banner-info h2{
+    font-size: 60px;
+    padding-bottom: 2rem;
+}
+
+.banner-info img{
+    filter: brightness(0);
+    width: 50%;
+}
 .banner-info-hover{
     display: none;
     position: absolute;
@@ -222,12 +231,10 @@ header {
 .b-hover:hover .banner-info-hover{   
     display: block;
 }
-.banner-info img{
-    filter: brightness(0);
-    width: 50%;
-}
+
 
 .b-hover:hover{
+    cursor: pointer;
     border-color: rgba(255, 255, 255, 0.301);
 }
 .green{
@@ -295,18 +302,37 @@ header {
     background-color: white;
 }
 
-.qea div{
+.qea{
+    margin-bottom: 8rem;
+}
+.qea-container{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-content: center;
+}
+.qea-row{
     border-collapse:collapse;
     border-top: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
 }
-.qea div:last-child{
-    margin-bottom:8rem ;
+.section-qea{
+    position: relative;
+    display: flex;
 }
+.arrow-absolute{
+    position: absolute;
+    color: red;
+    top:50px;
+    right: 0;
+}
+.qea-hover{
+    border: none;
+    color: #FF1C1C;
+}
+
 .qea span{
+    display: inline-block;
+    align-self: center;
     margin-right: 1rem;
 }
 footer{
