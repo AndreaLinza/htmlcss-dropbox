@@ -42,6 +42,7 @@ h3{
 .mg-b5{
     margin-bottom: 5rem;
 }
+
 .mg-r5{
     margin-right: 5rem;
 }
@@ -59,6 +60,12 @@ hr{
 }
 strong{
     display: block;
+}
+img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+
 }
 
 .base-list{
