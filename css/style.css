@@ -84,9 +84,6 @@ header {
     object-position: bottom;
 }
 
-main {
-    margin-top: 5rem;
-}
 
 .section-container {
     max-width: 1000px;
@@ -189,64 +186,91 @@ main {
 .banner-section{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    height: 60%;
+    position: relative;
 }
 .box-banner{
     display: flex;
     flex-wrap: wrap;
-    width: 30%; 
-    height: 60vh;
+    width:calc(100% / 3) ;
+    aspect-ratio: 1/1;   
 }
 .banner{
     display: flex;
-    width: 50%;
-    max-height: 60vh;
+    width: 50%; 
+    aspect-ratio: 1/1; 
     justify-content: center;
     align-items: center; 
 }
 .banner img{
-    width: 125px;
+    width: 50%;
 }
 .banner-info{
-    padding: 2rem;
+    display: block;
+    padding: 3rem;
     overflow: auto;
     background-color: #F5F5F5;
-    width: 40%;
-    max-height: 60vh
+}
+.banner-info-hover{
+    display: none;
+    position: absolute;
+    width: calc(100% / 3);
+    top:0;
+    left: calc(100% / 3);
+    height: 100%;    
+}
 
+.b-hover:hover .banner-info-hover{   
+    display: block;
 }
 .banner-info img{
     filter: brightness(0);
-    width: 250px;
+    width: 50%;
 }
 
-
+.b-hover:hover{
+    border-color: rgba(255, 255, 255, 0.301);
+}
 .green{
-    border: .8rem solid #D1E9CD;
+    border: 1rem solid transparent ;
     background-color: #A2D39B;
 }
+
+
 .red-wine{
+    border: 1rem solid transparent;
     background-color: #61082B;
 }
+
 .blue{
+    border: 1rem solid transparent;
     background-color: #0093CE;
 }
+
 .red-light{
+    border: 1rem solid transparent;
     background-color:#FF1C1C ;
 }
+
 .red{
+    border: 1rem solid transparent;
     background-color: #D5001F;
 }
+
 .blue-light{
+    border: 1rem solid transparent;
     background-color: #B4D0E7;
 }
+
 .blue-dark{
+    border: 1rem solid transparent;
     background-color: #0D2481;
 }
+
 .yellow{
+    border: 1rem solid transparent;
     background-color: #FFD830;
 }
+
 .dark{
     background-color: black;
 }
@@ -289,7 +313,7 @@ footer{
     color: white;
 }
 .container-footer{
-    padding-top:2rem;
+    padding-top:3rem;
 }
 .container-col-small{
     width: 15%;
@@ -307,8 +331,11 @@ footer{
     width: 10%;
 }
 .lang{
+    display: flex;
     padding-bottom:2rem ;
 }
 .lang span:last-child{
+    display: flex;
+    align-self: flex-end;
     padding: 0 .5rem;
 }

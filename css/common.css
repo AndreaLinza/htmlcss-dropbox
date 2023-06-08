@@ -14,11 +14,14 @@ h3{
     font-size: 25px;
     padding: 1rem 0;
 }
-.pd-t10{
-    padding-top:10rem;
+.pd-b10{
+    padding-bottom:10rem;
 }
 .pd-t1-b2{
     padding: 1rem 2rem;
+}
+.mg-t5{
+    margin-top: 5rem;
 }
 .mg-b5{
     margin-bottom: 5rem;
