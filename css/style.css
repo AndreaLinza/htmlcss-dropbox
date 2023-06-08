@@ -189,6 +189,10 @@ header {
     color: black;
     border: 1px solid black;
 }
+.bt-hover-white:hover{
+    background-color: var(--color-hover-primary-blue);
+    color: white;
+}
 
 /* -------------banner section-------------- */
 .banner-section {
@@ -379,11 +383,7 @@ footer {
     gap: 1rem;
 }
 
-.container-col-small ul {
-    padding: .5rem 0;
-}
-
-.container-col-small li {
+.container-col-small ul, .container-col-small li {
     padding: .5rem 0;
 }
 
